@@ -1,30 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  Nicholas Sebastian Hendrata
+</h1>
 
-## Getting Started
+This is the latest and greatest version of my personal website, made with Next.js for static site generation.  
+I use this site for whatever really, like posting blogs and showcasing my projects maybe.
 
-First, run the development server:
+## Sitemap
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+    .
+    ├── Home
+    ├── About
+    ├── Blogs
+    ├───── blog-posts...
+    ├── Projects
+    ├───── projects...
+    └── 404
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  **`/Home`**: Mix of Static and Dynamic content. Dynamic content includes the latest blogs and projects.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2.  **`/About`**: Purely Static content displaying information about me.
 
-## Learn More
+3.  **`/Blogs`**: Mostly Dynamic content displaying a list of blog posts, in which each post will have a dynamically generated page of its own.
 
-To learn more about Next.js, take a look at the following resources:
+4.  **`/Projects`**: Mostly Dynamic content displaying a grid of my personal projects.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5.  **`/404`**: Purely Static page displaying 404 page not found.
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+1.  **HTML, CSS, JavaScript**: Obviously.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **React.js**: Best Front End JavaScript framework, makes my life easier.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3.  **Next.js**: Framework built on top of React. Lets me serve dynamically generated static sites from a CDN without needing of a server.
