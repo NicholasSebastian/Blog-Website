@@ -1,13 +1,27 @@
 {
   "name": "blog-website",
   "version": "0.1.0",
+  "description": "Nicholas Sebastian's Personal Website",
+  "author": "Nicholas Sebastian Hendrata",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasSebastian/Blog-Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NicholasSebastian/Blog-Website/issues"
+  },
+  "homepage": "https://github.com/NicholasSebastian/Blog-Website#readme",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start": "next start",
     "build": "next build",
-    "start": "next start"
+    "export": "next export"
   },
   "dependencies": {
+    "gray-matter": "^4.0.2",
+    "marked": "^1.0.0",
     "next": "9.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
