@@ -118,17 +118,40 @@
 }
 
 .right {
-  width: 220px;
+  width: 250px;
 }
 
 .right h2 {
-  margin-bottom: 15px;
+  margin-bottom: 28px;
+  font-size: 26px;
 }
 
-.right > div {
-  height: 100px;
-  padding: 10px;
-  display: flex;
-  align-items: flex-end;
+.right > ul {
+  list-style: none;
+}
+
+.right > ul > li {
+  margin-bottom: 18px;
+}
+
+.right > ul > li > h3 {
+  margin-bottom: 4px;
+}
+
+.right > ul > li > div {
+  font-size: 15px;
+}
+
+.right > ul > li > a > button {
+  background-color: #55ffb8;
+  margin-top: 8px;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
   font-weight: 500;
+}
+
+.right > ul > li > a > button:hover {
+  cursor: pointer;
+  background-color: #00df82;
 }

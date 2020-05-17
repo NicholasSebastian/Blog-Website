@@ -54,13 +54,37 @@ const Index = ({ data }) => {
           </Link>
         </div>
         <div className={Styles.right}>
-          <h2>Languages I use</h2>
-          <div style={{ backgroundColor: "yellow" }}>HTML, CSS, JavaScript</div>
-          <div style={{ backgroundColor: "purple", color: "white" }}>
-            C Sharp
-          </div>
-          <div style={{ backgroundColor: "red", color: "white" }}>Java</div>
-          <div style={{ backgroundColor: "blue", color: "white" }}>Python</div>
+          <h2>Other Stuff</h2>
+          <ul>
+            <li>
+              <h3>Email</h3>
+              <div>nicholashendrata110900@gmail.com</div>
+              <a href="mailto:nicholashendrata110900@gmail.com">
+                <button>Go >></button>
+              </a>
+            </li>
+            <li>
+              <h3>GitHub</h3>
+              <div>NicholasSebastian</div>
+              <a href="https://github.com/NicholasSebastian">
+                <button>Go >></button>
+              </a>
+            </li>
+            <li>
+              <h3>LinkedIn</h3>
+              <div>nichsebastian</div>
+              <a href="https://www.linkedin.com/in/nichsebastian">
+                <button>Go >></button>
+              </a>
+            </li>
+            <li>
+              <h3>Instagram</h3>
+              <div>nicholashendrata</div>
+              <a href="https://www.instagram.com/nicholashendrata">
+                <button>Go >></button>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </Template>
