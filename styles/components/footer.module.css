@@ -1,0 +1,58 @@
+.footer {
+  background-color: #25242a;
+  font-size: 16px;
+}
+
+.footer a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  color: lightgray;
+}
+
+.footer span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  box-shadow: 0 1px white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left > span {
+  font-size: 80px;
+  font-weight: 700;
+  margin-right: 40px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.right div {
+  color: lightgray;
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+.links {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}

@@ -4,35 +4,19 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import Template from "../components/template";
-import Styles from "../styles/pages/index.module.css";
+import Template from "../../../components/template";
+import Styles from "../../../styles/pages/blog.module.css";
 
-const Index = ({ data }) => {
+const Blog = ({ data, categories, currentCategory }) => {
   return (
-    <Template title="Nicholas Sebastian - Home" description="Home Page">
-      <div className={Styles.relative}>
-        <div className={Styles.backdrop} />
-        <div className={Styles.introduction}>
-          <div>
-            <h1>Hi, I'm Nicholas Sebastian.</h1>
-            <p>
-              I am a student pursuing a computer science degree from the
-              University of Wollongong.
-            </p>
-            <p>
-              Here I post random things, like the things I learned, the things I
-              find interesting, etc.
-            </p>
-            <br />
-            <Link href="/projects">
-              <button>View Projects</button>
-            </Link>
-          </div>
-        </div>
-      </div>
+    <Template
+      title={"Nicholas Sebastian - " + currentCategory + " Posts"}
+      description="Blog Posts"
+    >
+      <div className={Styles.heading}>{currentCategory}</div>
       <div className={Styles.container}>
         <div className={Styles.left}>
-          <h1>Latest Blog Posts</h1>
+          <h3>Showing results for: {currentCategory}</h3>
           {data.map((datum) => {
             return (
               <div key={datum}>
@@ -49,25 +33,51 @@ const Index = ({ data }) => {
               </div>
             );
           })}
-          <Link href="/blog">
-            <button>View More Posts</button>
-          </Link>
         </div>
         <div className={Styles.right}>
-          <h2>Languages I use</h2>
-          <div style={{ backgroundColor: "yellow" }}>HTML, CSS, JavaScript</div>
-          <div style={{ backgroundColor: "purple", color: "white" }}>
-            C Sharp
-          </div>
-          <div style={{ backgroundColor: "red", color: "white" }}>Java</div>
-          <div style={{ backgroundColor: "blue", color: "white" }}>Python</div>
+          <h2>Filter by tag</h2>
+          <ul>
+            {categories.map((category) => {
+              return (
+                <Link
+                  href={"/blog/tag/" + category.replace(" ", "-").toLowerCase()}
+                >
+                  <li>{category}</li>
+                </Link>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </Template>
   );
 };
 
-export const getStaticProps = async () => {
+export const categories = [
+  "Technical",
+  "Personal",
+  "Code",
+  "Design",
+  "Web Development",
+  "Game Development",
+];
+
+export const getStaticPaths = async () => {
+  const paths = categories.map((category) => {
+    return {
+      params: {
+        category: category.replace(" ", "-").toLowerCase(),
+      },
+    };
+  });
+
+  return {
+    paths: paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async ({ params: { category } }) => {
   // Get all the files in the posts directory and their paths.
   const files = fs.readdirSync("posts");
   const filepaths = files.map((file) => {
@@ -112,7 +122,7 @@ export const getStaticProps = async () => {
   });
 
   // Convert the date objects into strings.
-  let dataString = data.map((info) => {
+  const dataStrings = data.map((info) => {
     return {
       filepath: info.filepath,
       title: info.title,
@@ -122,14 +132,25 @@ export const getStaticProps = async () => {
     };
   });
 
-  // We only want 3 posts in this page.
-  if (dataString.length > 3) dataString = dataString.slice(0, 3);
+  // Filter out posts with no tags that match the category name.
+  let result = dataStrings.filter((dataString) =>
+    dataString.tags
+      .map((tag) => tag.replace(" ", "-").toLowerCase())
+      .includes(category)
+  );
+
+  // Get the current category name.
+  const categoryName =
+    category.substring(0, 1).toUpperCase() +
+    category.substring(1).replace("-", " ");
 
   return {
     props: {
-      data: dataString,
+      data: result,
+      categories: categories,
+      currentCategory: categoryName,
     },
   };
 };
 
-export default Index;
+export default Blog;

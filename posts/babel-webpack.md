@@ -1,6 +1,8 @@
 ---
-title: How to install webpack and babel for JavaScript ES6+ development.
+title: Installing webpack and babel for JavaScript ES6+ development
 description: "Guide to setting up a development environment that allows the use of ES6+ features."
+date: May 11, 2020
+tags: ["Technical", "Web Development"]
 ---
 
 ## Instructions to install babel and webpack
@@ -168,11 +170,10 @@ Your package.json dev dependencies should now look like this:
   },
 ```
 
-<br>
-And you can now start writing ES6+ code. 
-<br>
+And you can now start writing ES6+ code.
+
 You should run the webpack development server during development with `npm start` so you can view the webpage on the port its listening on and any changes you make to the code will be hot reloaded automatically whenever you save.
-<br>
+
 For your final build, simply compile the Javascript files into a bundle with `npm run build` and you're good to go.<br>
 Just put the bunde Javascript file, the HTML files, CSS files, etc into one folder and host!
 

@@ -1,21 +1,31 @@
 import React from "react";
-import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
 
+import Template from "../../components/template";
+import Styles from "../../styles/pages/post.module.css";
+import MarkdownStyles from "../../styles/markdown.module.css";
+
 // Template for page.
-const Post = ({ contents, data }) => {
+const Post = ({ data, contents }) => {
   return (
-    <>
-      <Head>
-        <title>{data.title}</title>
-        <meta name="description" content={data.description}></meta>
-        <meta name="author" content="Nicholas Sebastian Hendrata"></meta>
-      </Head>
-      <div dangerouslySetInnerHTML={{ __html: contents }} />
-    </>
+    <Template title={data.title} description={data.description}>
+      <div className={Styles.container}>
+        <h1>{data.title}</h1>
+        <span>{data.date}</span>
+        <div className={Styles.tags}>
+          {data.tags.map((datum) => {
+            return <div>{datum}</div>;
+          })}
+        </div>
+        <div
+          className={MarkdownStyles.markdown_body}
+          dangerouslySetInnerHTML={{ __html: contents }}
+        />
+      </div>
+    </Template>
   );
 };
 

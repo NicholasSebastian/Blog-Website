@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  width: 750px;
+  padding: 60px 0;
+}
+
+.container > h1 {
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  margin: 20px 0 40px 0;
+}
+
+.tags > div {
+  background-color: lightgray;
+  margin-right: 12px;
+  padding: 3px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #464646;
+}
