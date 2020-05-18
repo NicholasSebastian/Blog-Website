@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -16,8 +17,15 @@ const Post = ({ data, contents }) => {
         <h1>{data.title}</h1>
         <span>{data.date}</span>
         <div className={Styles.tags}>
-          {data.tags.map((datum) => {
-            return <div>{datum}</div>;
+          {data.tags.map((tag) => {
+            return (
+              <Link
+                key={tag}
+                href={"/blog/tag/" + tag.replace(" ", "-").toLowerCase()}
+              >
+                <div>{tag}</div>
+              </Link>
+            );
           })}
         </div>
         <div

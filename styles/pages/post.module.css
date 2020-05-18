@@ -1,7 +1,8 @@
 .container {
   margin: 0 auto;
   width: 750px;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 .container > h1 {
@@ -13,11 +14,17 @@
   margin: 20px 0 40px 0;
 }
 
-.tags > div {
+.tags div {
   background-color: lightgray;
   margin-right: 12px;
   padding: 3px 10px;
   font-size: 14px;
   border-radius: 6px;
   color: #464646;
+}
+
+.tags div:hover {
+  cursor: pointer;
+  background-color: #ff6e55;
+  color: #fff;
 }

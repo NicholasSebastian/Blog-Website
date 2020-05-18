@@ -1,0 +1,15 @@
+.heading {
+  background-color: #25242a;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}

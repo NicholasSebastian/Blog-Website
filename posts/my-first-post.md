@@ -5,4 +5,4 @@ date: April 14, 2020
 tags: ["Technical", "Personal", "Web Development", "Design"]
 ---
 
-test
+I should add support for images in blog posts.

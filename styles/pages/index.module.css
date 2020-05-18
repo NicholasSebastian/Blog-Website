@@ -75,6 +75,7 @@
 .left > div h3 {
   margin-bottom: 10px;
   font-size: 24px;
+  line-height: 1.3;
 }
 
 .left > div h3:hover {
@@ -84,6 +85,7 @@
 
 .left > div > span {
   color: gray;
+  font-size: 15px;
 }
 
 .left > div > p {
@@ -102,6 +104,12 @@
   font-size: 14px;
   border-radius: 6px;
   color: #464646;
+}
+
+.left > div > div > div:hover {
+  cursor: pointer;
+  background-color: #ff6e55;
+  color: white;
 }
 
 .left > button {
@@ -136,6 +144,7 @@
 
 .right > ul > li > h3 {
   margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .right > ul > li > div {

@@ -5,10 +5,13 @@ date: May 11, 2020
 tags: ["Technical", "Web Development"]
 ---
 
-## Instructions to install babel and webpack
+By default, the JavaScript you write along side your HTML and CSS is the old version of JavaScript,
+and its missing out on all the cool new features ES6+ has to offer, such as arrow functions, importing and exporting,
+classes, async/await, etc. But when you use these ES6+ features, you normally will need to then compile
+your JavaScript code down to the older version which older browsers can understand.
+This is where babel and webpack comes in.
 
-In case you want to recreate the boilerplate project from scratch.<br>
-Yes I'm writing instructions for myself cause I'm an idiot and most of the instructions you find in the internet are either outdated, or are just straight up bad.
+## Instructions to install babel and webpack
 
 ### 1. Node Package Manager
 

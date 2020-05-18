@@ -11,15 +11,33 @@ const About = () => {
         <div className={Styles.left}>
           <h1>Introduction</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            veniam nostrum libero ut saepe cupiditate reiciendis architecto
-            velit, ullam temporibus pariatur esse debitis numquam inventore
-            deserunt quaerat quas iure molestias sunt. Expedita laudantium ullam
-            tenetur, debitis, labore dolore officiis eveniet nihil laboriosam
-            eaque nam earum ad officia reiciendis veniam. Perferendis quod
-            labore atque vitae necessitatibus nam odit reprehenderit neque nisi
-            odio dignissimos possimus placeat repellendus iure ipsam, non dicta
-            quia tenetur natus praesentium id fugiat rem.
+            I'm Nicholas Sebastian, a hobbyist programmer, and I usually spend
+            my time working on personal projects to learn new things and learn
+            of all the things that I can accomplish with software. I'm currently
+            a second year undergraduate student in Singapore pursuing a degree
+            in computer science from the University of Wollongong.
+            <br />
+            <br />
+            I am relatively fluent in C# and JavaScript ES6+, HTML and CSS too
+            if you consider them as programming languages, and I also have
+            confidence in writing Java and Python. I first started programming
+            on my 3rd year of middle school, when I made small games with C#
+            through Unity. I then took private classes in Python programming
+            through my high school years. I also had HTML and CSS lessons
+            throghout my whole life in school if you count them in. I recently
+            learned JavaScript by myself and now take Java classes in my college
+            classes. I still learn more things everyday and I aspire to have a
+            career that will allow me to channel my passion in programming and
+            make the most out of my abilities.
+            <br />
+            <br />I originally made this website simply because I randomly
+            thought of making a personal blogging website when I was looking for
+            ideas to start a personal project on, but then not only that, I then
+            remembered all the times I had so much in my mind, like from the
+            things I've learned, to random opinions and concepts I have in my
+            head. I learn new things everyday and the idea is that with the
+            blogs, I can occassionally share the things I've learned or
+            experienced.
           </p>
           <h2>My setup</h2>
           <ul>
@@ -44,18 +62,23 @@ const About = () => {
           </ul>
           <h2>Colophon</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            veniam nostrum libero ut saepe cupiditate reiciendis architecto
-            velit, ullam temporibus pariatur esse debitis numquam inventore
-            deserunt quaerat quas iure molestias sunt. Expedita laudantium ullam
-            tenetur, debitis, labore dolore officiis eveniet nihil laboriosam
-            eaque nam earum ad officia reiciendis veniam. Perferendis quod
-            labore atque vitae necessitatibus nam odit reprehenderit neque nisi
-            odio dignissimos possimus placeat repellendus iure ipsam, non dicta
-            quia tenetur natus praesentium id fugiat rem. Neque quia, iusto
-            consectetur beatae obcaecati magnam velit fugit distinctio ad,
-            delectus doloribus ea nulla earum nam corrupti quasi minima. Fugiat
-            quaerat beatae error?
+            Like any website, this website was written in HTML, CSS and
+            JavaScript. But in addition, it was written with the Next.js
+            framework, which is a framework built on top of the React front-end
+            framework. Although its normally used for dynamic, server-rendered
+            React applications and websites, it also supports static site
+            generation, which is what I used for this website. Initially I had
+            difficulty choosing between Gatsby and Next, but then I finally
+            decided on Next because of its greater versatility among other
+            things.
+            <br />
+            <br />
+            This website is hosted on the Netlify CDN, and its codebase is
+            managed with Git and GitHub. The font being used throughout the site
+            is called Swap, served by Google Fonts. The backdrop used in the
+            home page is an open source image from Pixabay. This site was built
+            in with modern standards so it might not look well in older
+            browsers.
           </p>
         </div>
         <div className={Styles.right}>

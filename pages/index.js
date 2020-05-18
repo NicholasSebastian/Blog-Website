@@ -7,6 +7,8 @@ import matter from "gray-matter";
 import Template from "../components/template";
 import Styles from "../styles/pages/index.module.css";
 
+// TODO: Add media queries; make website responsive.
+
 const Index = ({ data }) => {
   return (
     <Template title="Nicholas Sebastian - Home" description="Home Page">
@@ -43,7 +45,16 @@ const Index = ({ data }) => {
                 <p>{datum.description}</p>
                 <div>
                   {datum.tags.map((tag) => {
-                    return <div key={tag}>{tag}</div>;
+                    return (
+                      <Link
+                        key={tag}
+                        href={
+                          "/blog/tag/" + tag.replace(" ", "-").toLowerCase()
+                        }
+                      >
+                        <div>{tag}</div>
+                      </Link>
+                    );
                   })}
                 </div>
               </div>

@@ -27,7 +27,15 @@ const Blog = ({ data, categories, currentCategory }) => {
                 <p>{datum.description}</p>
                 <div>
                   {datum.tags.map((tag) => {
-                    return <div key={tag}>{tag}</div>;
+                    return (
+                      <Link
+                        href={
+                          "/blog/tag/" + tag.replace(" ", "-").toLowerCase()
+                        }
+                      >
+                        <div key={tag}>{tag}</div>
+                      </Link>
+                    );
                   })}
                 </div>
               </div>
