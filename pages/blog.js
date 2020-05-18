@@ -5,7 +5,8 @@ import path from "path";
 import matter from "gray-matter";
 
 import Template from "../components/template";
-import { categories } from "./blog/tag/[category]";
+import Entry from "../components/blog_entry";
+import { categories } from "../data/categories";
 import Styles from "../styles/pages/blog.module.css";
 
 const Blog = ({ data, categories }) => {
@@ -15,29 +16,7 @@ const Blog = ({ data, categories }) => {
       <div className={Styles.container}>
         <div className={Styles.left}>
           {data.map((datum) => {
-            return (
-              <div key={datum}>
-                <Link href={"/blog/" + datum.filepath}>
-                  <h3>{datum.title}</h3>
-                </Link>
-                <span>{datum.date}</span>
-                <p>{datum.description}</p>
-                <div>
-                  {datum.tags.map((tag) => {
-                    return (
-                      <Link
-                        key={tag}
-                        href={
-                          "/blog/tag/" + tag.replace(" ", "-").toLowerCase()
-                        }
-                      >
-                        <div>{tag}</div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            );
+            return <Entry datum={datum} />;
           })}
         </div>
         <div className={Styles.right}>

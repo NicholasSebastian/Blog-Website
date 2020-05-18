@@ -5,6 +5,7 @@ import path from "path";
 import matter from "gray-matter";
 
 import Template from "../components/template";
+import Entry from "../components/blog_entry";
 import Styles from "../styles/pages/index.module.css";
 
 // TODO: Blog posts image support
@@ -37,29 +38,7 @@ const Index = ({ data }) => {
         <div className={Styles.left}>
           <h1>Latest Blog Posts</h1>
           {data.map((datum) => {
-            return (
-              <div key={datum}>
-                <Link href={"/blog/" + datum.filepath}>
-                  <h3>{datum.title}</h3>
-                </Link>
-                <span>{datum.date}</span>
-                <p>{datum.description}</p>
-                <div>
-                  {datum.tags.map((tag) => {
-                    return (
-                      <Link
-                        key={tag}
-                        href={
-                          "/blog/tag/" + tag.replace(" ", "-").toLowerCase()
-                        }
-                      >
-                        <div>{tag}</div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            );
+            return <Entry datum={datum} />;
           })}
           <Link href="/blog">
             <button>View More Posts</button>

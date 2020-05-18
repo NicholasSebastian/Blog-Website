@@ -5,6 +5,7 @@ import path from "path";
 import matter from "gray-matter";
 
 import Template from "../../../components/template";
+import { categories } from "../../../data/categories";
 import Styles from "../../../styles/pages/blog.module.css";
 
 const Blog = ({ data, categories, currentCategory }) => {
@@ -60,15 +61,6 @@ const Blog = ({ data, categories, currentCategory }) => {
     </Template>
   );
 };
-
-export const categories = [
-  "Technical",
-  "Personal",
-  "Code",
-  "Design",
-  "Web Development",
-  "Game Development",
-];
 
 export const getStaticPaths = async () => {
   const paths = categories.map((category) => {

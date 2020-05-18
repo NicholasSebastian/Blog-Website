@@ -13,7 +13,7 @@ const Projects = ({ data }) => {
 
         <h1>Software Repository</h1>
         <p>
-          My public repositories fetched straight from
+          My public repositories taken straight from
           github.com/NicholasSebastian.
           <br />
           You can click on any of the entries to view their source code on
