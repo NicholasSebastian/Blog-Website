@@ -1,8 +1,8 @@
 ---
-title: My first post and this new website
+title: Using Next.js for Static Site Generation and for this new website
 description: "The first post for this new blog of mine, and what I used to actually make the site."
 date: April 14, 2020
-tags: ["Technical", "Personal", "Web Development", "Design"]
+tags: ["Technical", "Web Development", "Design"]
 ---
 
 I should add support for images in blog posts.

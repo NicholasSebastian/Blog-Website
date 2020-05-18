@@ -18,15 +18,14 @@ const About = () => {
             in computer science from the University of Wollongong.
             <br />
             <br />
-            I am relatively fluent in C# and JavaScript ES6+, HTML and CSS too
-            if you consider them as programming languages, and I also have
-            confidence in writing Java and Python. I first started programming
-            on my 3rd year of middle school, when I made small games with C#
-            through Unity. I then took private classes in Python programming
-            through my high school years. I also had HTML and CSS lessons
-            throghout my whole life in school if you count them in. These past
-            two years I learned JavaScript by myself and now I take Java classes
-            in my college classes. I still learn more things everyday and I
+            I am relatively fluent in JavaScript ES6+, Java, C# and Python. HTML
+            and CSS too if you consider them as programming languages. I first
+            started programming on my 3rd year of middle school, when I made
+            small games with C# through Unity. I then took private classes in
+            Python programming through my high school years. I also had HTML and
+            CSS lessons throghout my whole life in school if you count them in.
+            These past two years I learned JavaScript by myself and now I learn
+            Java in my college classes. I still learn more things everyday and I
             aspire to one day have a career that will allow me to channel my
             passion in programming and make the most out of my abilities.
             <br />
@@ -35,9 +34,9 @@ const About = () => {
             ideas to start a personal project on, but then not only that, I then
             remembered all the times I had so much in my mind, like from the
             things I've learned, to random opinions and concepts I have in my
-            head. I learn new things everyday and the idea is that with the
-            blogs, I can occassionally share the things I've learned or
-            experienced.
+            head. I learn new things everyday and the idea is that with this
+            blog, I can occassionally share whatever I want, like the things
+            I've learned or experienced.
           </p>
           <h2>My setup</h2>
           <ul>
@@ -63,29 +62,26 @@ const About = () => {
           <h2>Colophon</h2>
           <p>
             Like any website, this website was written in HTML, CSS and
-            JavaScript. But in addition, it was written with the Next.js
-            framework, which is a framework built on top of the React front-end
-            framework. Although its normally used for dynamic, server-rendered
-            React applications and websites, it also supports static site
-            generation, which is what I used for this website. Initially I had
-            difficulty choosing between Gatsby and Next, but then I finally
-            decided on Next because of its greater versatility among other
-            things.
+            JavaScript. But also, it was written with the Next.js framework,
+            which is a framework built on top of the React front-end framework.
+            Although its normally used for dynamic, server-rendered React
+            applications and websites, it also supports static site generation,
+            which is what I used for this website. Initially I had difficulty
+            choosing between Gatsby and Next, but then I finally decided on Next
+            because of its greater versatility among other things.
             <br />
             <br />
-            This website is hosted on the Netlify CDN, and its codebase is
+            This website is hosted with Netlify as its CDN, and its codebase is
             managed with Git and GitHub. The font being used throughout the site
             is called Swap, served by Google Fonts. The backdrop used in the
             home page is an open source image from Pixabay. This site was built
-            in with modern standards so it might not look well in older
+            with modern technologies in mind so it might not look well in older
             browsers.
           </p>
         </div>
         <div className={Styles.right}>
           <h2>Languages I use</h2>
-          <div style={{ backgroundColor: "#ffff00" }}>
-            HTML / CSS / JavaScript
-          </div>
+          <div style={{ backgroundColor: "#ffff00" }}>JavaScript</div>
           <div style={{ backgroundColor: "#ff4000", color: "white" }}>Java</div>
           <div style={{ backgroundColor: "#bf00ff", color: "white" }}>
             C Sharp

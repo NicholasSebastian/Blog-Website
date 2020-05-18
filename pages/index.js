@@ -7,6 +7,7 @@ import matter from "gray-matter";
 import Template from "../components/template";
 import Styles from "../styles/pages/index.module.css";
 
+// TODO: Blog posts image support
 // TODO: Add media queries; make website responsive.
 
 const Index = ({ data }) => {

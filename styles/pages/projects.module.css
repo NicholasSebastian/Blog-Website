@@ -10,10 +10,58 @@
 .container {
   margin: 0 auto;
   width: 1000px;
-  padding: 60px 0;
+  padding: 10px 0 100px 0;
 }
 
-.container > div {
-  margin-top: 10px;
-  margin-bottom: 60px;
+.container > h1 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.container > p {
+  line-height: 1.6;
+}
+
+.repositories {
+  margin-top: 15px;
+}
+
+.repositories > div {
+  box-shadow: 0 -1px gray inset;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.repositories > a > div {
+  box-shadow: 0 -1px gray inset;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.repo_entry:hover {
+  cursor: pointer;
+  background-color: #55ffb8;
+}
+
+.repo_name {
+  width: 220px;
+}
+
+.repo_desc {
+  width: 580px;
+}
+
+.repo_lang {
+  width: 100px;
+}
+
+.repo_date {
+  width: 100px;
+  text-align: right;
 }
