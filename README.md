@@ -13,8 +13,7 @@ I use this site for whatever really, like posting blogs and showcasing my projec
     ├── Blogs
     ├───── blog-posts...
     ├── Projects
-    ├───── projects...
-    └── 404
+    └───── projects...
 
 1.  **`/Home`**: Mix of Static and Dynamic content. Dynamic content includes the latest blogs and projects.
 
