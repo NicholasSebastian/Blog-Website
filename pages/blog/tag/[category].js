@@ -13,7 +13,7 @@ const Blog = ({ data, categories, currentCategory }) => {
       title={"Nicholas Sebastian - " + currentCategory + " Posts"}
       description="Blog Posts"
     >
-      <div className={Styles.heading}>{currentCategory}</div>
+      <div className={Styles.heading}>{"Blog Posts - " + currentCategory}</div>
       <div className={Styles.container}>
         <div className={Styles.left}>
           <h3>Showing results for: {currentCategory}</h3>

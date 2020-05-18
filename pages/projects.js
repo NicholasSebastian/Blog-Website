@@ -8,7 +8,10 @@ const Projects = () => {
     <Template title="Nicholas Sebastian - Projects" description="Projects Page">
       <div className={Styles.heading}>Projects</div>
       <div className={Styles.container}>
-        <h1>Projects Page</h1>
+        <h1>Featured Projects</h1>
+        <div>content goes here</div>
+        <h1>Software Repository</h1>
+        <div>content from GitHub API goes here</div>
       </div>
     </Template>
   );

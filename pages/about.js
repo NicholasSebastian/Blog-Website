@@ -24,11 +24,11 @@ const About = () => {
             on my 3rd year of middle school, when I made small games with C#
             through Unity. I then took private classes in Python programming
             through my high school years. I also had HTML and CSS lessons
-            throghout my whole life in school if you count them in. I recently
-            learned JavaScript by myself and now take Java classes in my college
-            classes. I still learn more things everyday and I aspire to have a
-            career that will allow me to channel my passion in programming and
-            make the most out of my abilities.
+            throghout my whole life in school if you count them in. These past
+            two years I learned JavaScript by myself and now I take Java classes
+            in my college classes. I still learn more things everyday and I
+            aspire to one day have a career that will allow me to channel my
+            passion in programming and make the most out of my abilities.
             <br />
             <br />I originally made this website simply because I randomly
             thought of making a personal blogging website when I was looking for
