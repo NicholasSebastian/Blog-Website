@@ -31,4 +31,4 @@ I use this site for whatever really, like posting blogs and showcasing my projec
 
 2.  **React.js**: Best Front End JavaScript framework, makes my life easier.
 
-3.  **Next.js**: Framework built on top of React. Lets me serve dynamically generated static sites from a CDN without needing of a server.
+3.  **Next.js**: Framework built on top of React. Lets me generate static sites so I can serve from a CDN without needing of a server.
