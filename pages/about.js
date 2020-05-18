@@ -23,9 +23,9 @@ const About = () => {
             started programming on my 3rd year of middle school, when I made
             small games with C# through Unity. I then took private classes in
             Python programming through my high school years. I also had HTML and
-            CSS lessons throghout my whole life in school if you count them in.
-            These past two years I learned JavaScript by myself and now I learn
-            Java in my college classes. I still learn more things everyday and I
+            CSS lessons throghout my school years if you count them in. These
+            past two years I learned JavaScript by myself and now I learn Java
+            in my college classes. I still learn more things everyday and I
             aspire to one day have a career that will allow me to channel my
             passion in programming and make the most out of my abilities.
             <br />
