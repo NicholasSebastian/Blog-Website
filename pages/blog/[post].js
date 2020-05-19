@@ -10,7 +10,7 @@ import Styles from "../../styles/pages/post.module.css";
 import MarkdownStyles from "../../styles/markdown.module.css";
 
 // Template for page.
-const Post = ({ data, contents }) => {
+const Post = ({ data, image, contents }) => {
   return (
     <Template title={data.title} description={data.description}>
       <div className={Styles.container}>
@@ -28,6 +28,9 @@ const Post = ({ data, contents }) => {
             );
           })}
         </div>
+        {image && (
+          <img src={"/post_images/" + image} alt="image could not be loaded" />
+        )}
         <div
           className={MarkdownStyles.markdown_body}
           dangerouslySetInnerHTML={{ __html: contents }}
@@ -60,11 +63,13 @@ export const getStaticProps = async ({ params: { post } }) => {
   const filepath = path.join("posts", post + ".md");
   const rawMarkdown = fs.readFileSync(filepath).toString();
   const parsedMarkdown = matter(rawMarkdown);
+  const image = parsedMarkdown.data.image ? parsedMarkdown.data.image : null;
   const parsedContent = marked(parsedMarkdown.content);
 
   return {
     props: {
       data: parsedMarkdown.data,
+      image: image,
       contents: parsedContent,
     },
   };

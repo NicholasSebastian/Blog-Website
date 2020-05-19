@@ -35,6 +35,14 @@
   line-height: 1.5;
 }
 
+.left > p > a {
+  box-shadow: 0 2px #ff6e55;
+}
+
+.left > p > a:hover {
+  background-color: #ff6e55;
+}
+
 .left > ul {
   list-style: none;
 }

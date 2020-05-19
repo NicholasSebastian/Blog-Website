@@ -16,7 +16,7 @@ const Blog = ({ data, categories }) => {
       <div className={Styles.container}>
         <div className={Styles.left}>
           {data.map((datum) => {
-            return <Entry datum={datum} />;
+            return <Entry key={datum} datum={datum} />;
           })}
         </div>
         <div className={Styles.right}>
@@ -25,6 +25,7 @@ const Blog = ({ data, categories }) => {
             {categories.map((category) => {
               return (
                 <Link
+                  key={category}
                   href={"/blog/tag/" + category.replace(" ", "-").toLowerCase()}
                 >
                   <li>{category}</li>
