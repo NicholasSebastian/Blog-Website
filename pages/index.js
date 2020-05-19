@@ -37,7 +37,7 @@ const Index = ({ data }) => {
         <div className={Styles.left}>
           <h1>Latest Blog Posts</h1>
           {data.map((datum) => {
-            return <Entry datum={datum} />;
+            return <Entry key={datum} datum={datum} />;
           })}
           <Link href="/blog">
             <button>View More Posts</button>

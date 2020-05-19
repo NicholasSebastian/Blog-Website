@@ -81,12 +81,17 @@ const About = () => {
             <br />
             This website is hosted on{" "}
             <a href="https://www.netlify.com/">Netlify</a>, and its codebase is
-            managed with Git and GitHub. The font being used throughout the site
-            is called Swap, served by Google Fonts. The backdrop used in the
-            home page is an open source image from{" "}
-            <a href="https://pixabay.com/">Pixabay</a>. This site was built with
-            modern technologies in mind so it might not look well in older
-            browsers.
+            managed with Git and GitHub. <br />
+            Icon made by{" "}
+            <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
+            FlatIcon. <br />
+            The font being used throughout the site is called{" "}
+            <a href="https://fonts.google.com/specimen/swap">Swap</a>, served by
+            Google Fonts. <br />
+            The backdrop used in the home page is an open source image from{" "}
+            <a href="https://pixabay.com/">Pixabay</a>. <br />
+            This site was built with modern browsers in mind so it might not
+            look well in older ones.
           </p>
         </div>
         <div className={Styles.right}>
