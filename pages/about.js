@@ -24,32 +24,30 @@ const About = () => {
             </a>{" "}
             from the University of Wollongong.
             <br />
-            <br />I normally code in JavaScript ES6+, Java, C# and Python. HTML
-            and CSS too if you consider them languages. I first started
-            programming on my 3rd year of middle school, when I made small games
-            with C# through <a href="https://unity.com/">Unity</a>. I then took
-            private classes to learn Python through my high school years. I also
-            had HTML and CSS lessons throghout my school years if you count them
-            in. These past two years I learned JavaScript by myself and now I
-            learn Java in my college classes. I still learn more things everyday
-            and I aspire to one day have a career that will allow me to channel
-            my passion in programming and make the most out of my abilities.
+            <br />I know JavaScript ES6+, Java, C# and Python. HTML and CSS too
+            if you consider them languages. I first started programming on my
+            3rd year of middle school, when I made small games with C# through{" "}
+            <a href="https://unity.com/">Unity</a>. I then took private classes
+            to learn Python through my high school years. I also had HTML and
+            CSS lessons throghout my school years if you count them in. These
+            past two years I learned JavaScript by myself and now I learn Java
+            in my college classes. I still learn more things everyday and I
+            aspire to one day have a career that will allow me to channel my
+            passion in programming and make the most out of my abilities.
             <br />
-            <br />I originally made this website simply because I randomly
-            thought of it when I was looking for ideas to start a personal
-            project on, but then not only that, I then remembered all the times
-            I had so much in my mind, like from the things I've learned, to
-            random opinions and concepts I have in my head. I learn new things
-            everyday and the idea is that with this blog, I can occassionally
-            share whatever I want, like the things I've learned or experienced.
+            <br />
+            The purpose of this website? I honestly have no idea. I originally
+            made this on a whim, but this blog turned out to be quite of use to
+            me. I occassionally feel like sharing the things that I've learned
+            or experienced and this is probably where I'll turn to.
           </p>
-          <h2>My setup</h2>
+          <h2>What I use</h2>
           <ul>
             <li>
               <div>
                 <b>Laptop :</b>
               </div>
-              13" Macbook Pro
+              13" MacBook Pro
             </li>
             <li>
               <div>
@@ -59,7 +57,7 @@ const About = () => {
             </li>
             <li>
               <div>
-                <b>Shell :</b>
+                <b>Command Line :</b>
               </div>
               Zsh Terminal
             </li>
@@ -82,12 +80,12 @@ const About = () => {
             This website is hosted on{" "}
             <a href="https://www.netlify.com/">Netlify</a>, and its codebase is
             managed with Git and GitHub. <br />
-            Icon made by{" "}
-            <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
-            FlatIcon. <br />
             The font being used throughout the site is called{" "}
             <a href="https://fonts.google.com/specimen/swap">Swap</a>, served by
             Google Fonts. <br />
+            The favicon is made by{" "}
+            <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
+            FlatIcon. <br />
             The backdrop used in the home page is an open source image from{" "}
             <a href="https://pixabay.com/">Pixabay</a>. <br />
             This site was built with modern browsers in mind so it might not
