@@ -2,7 +2,7 @@
 title: Installing webpack and babel for JavaScript ES6+ development
 description: "Guide to setting up a development environment that allows the use of ES6+ features."
 date: May 11, 2020
-tags: ["Technical", "Web Development"]
+tags: ["Technical"]
 ---
 
 By default, the JavaScript you write along side your HTML and CSS is the old version of JavaScript,
@@ -49,7 +49,7 @@ Define the input and output directories for webpack to compile:
 ```
 // inside of webpack.config.js
 module.exports = {
-    entry: ['./app/main.js'],
+    entry: ['./src/main.js'],
     output: {
         path: __dirname
         filename: 'bundle.js'
@@ -84,6 +84,12 @@ Then install it as a local dev dependency:
 npm install --save-dev webpack-dev-server
 ```
 
+And also its CLI:
+
+```
+npm install --save-dev webpack-cli
+```
+
 Then add a script to the package.json for running the webpack development server, so it should now look like so:
 
 ```
@@ -99,15 +105,15 @@ And add to the webpack configuration file so it looks like so:
 ```
 // inside of webpack.config.js
 module.exports = {
-  entry: ["@babel/polyfill", "./scripts/main.js"],
+  entry: ["./src/main.js"],
   output: {
     path: __dirname,
-    filename: "./build/bundle.js",
+    filename: "bundle.js",
   },
   mode: "development",        // You can change this to production later for your final build.
   devServer: {
     port: 3000,               // Set this to whatever port you want, this is the port its listening on.
-    contentBase: "./build",   // Directory where you put the index.html file.
+    contentBase: "",          // Directory where you put the index.html file.
   },
 ```
 
@@ -134,10 +140,10 @@ Add the babel configuration into the webpack configuration file, so it should no
 ```
 // inside of webpack.config.js
 module.exports = {
-  entry: ["@babel/polyfill", "./scripts/main.js"],
+  entry: ["./src/main.js"],
   output: {
     path: __dirname,
-    filename: "./build/bundle.js",
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -154,7 +160,7 @@ module.exports = {
   mode: "development",
   devServer: {
     port: 3000,
-    contentBase: "./build",
+    contentBase: "",
   },
 ```
 
@@ -178,7 +184,7 @@ And you can now start writing ES6+ code.
 You should run the webpack development server during development with `npm start` so you can view the webpage on the port its listening on and any changes you make to the code will be hot reloaded automatically whenever you save.
 
 For your final build, simply compile the Javascript files into a bundle with `npm run build` and you're good to go.<br>
-Just put the bunde Javascript file, the HTML files, CSS files, etc into one folder and host!
+Just put the bundle Javascript file, the HTML files, CSS files, etc into one folder and host!
 
 ### 8. Babel Polyfill (Bonus)
 
@@ -194,10 +200,10 @@ And add Babel-polyfill as an entry in the webpack configuration file:
 
 ```
 module.exports = {
-  entry: ["@babel/polyfill", "./scripts/main.js"],  // Add Babel-polyfill here.
+  entry: ["@babel/polyfill", "./src/main.js"],  // Add Babel-polyfill here.
   output: {
     path: __dirname,
-    filename: "./build/bundle.js",
+    filename: "bundle.js",
   },
 }
 ```

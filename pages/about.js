@@ -22,7 +22,8 @@ const About = () => {
             <a href="https://coursefinder.uow.edu.au/information/index.html?course=b-computer-science-game-and-mobile-dev">
               computer science
             </a>{" "}
-            from the University of Wollongong.
+            from the{" "}
+            <a href="https://www.uow.edu.au/">University of Wollongong</a>.
             <br />
             <br />I know JavaScript ES6+, Java, C# and Python. HTML and CSS too
             if you consider them languages. I first started programming on my
@@ -30,10 +31,11 @@ const About = () => {
             <a href="https://unity.com/">Unity</a>. I then took private classes
             to learn Python through my high school years. I also had HTML and
             CSS lessons throghout my school years if you count them in. These
-            past two years I learned JavaScript by myself and now I learn Java
-            in my college classes. I still learn more things everyday and I
-            aspire to one day have a career that will allow me to channel my
-            passion in programming and make the most out of my abilities.
+            past two years I learned JavaScript by myself and Java in my college
+            classes, and am now learning C++ by myself. I still learn more
+            things everyday and I aspire to one day have a career that will
+            allow me to channel my passion in programming and make the most out
+            of my abilities.
             <br />
             <br />
             The purpose of this website? I honestly have no idea. I originally
@@ -41,41 +43,32 @@ const About = () => {
             me. I occassionally feel like sharing the things that I've learned
             or experienced and this is probably where I'll turn to.
           </p>
-          <h2>What I use</h2>
-          <ul>
-            <li>
-              <div>
-                <b>Laptop :</b>
-              </div>
-              13" MacBook Pro
-            </li>
-            <li>
-              <div>
-                <b>Code Editor :</b>
-              </div>
-              Visual Studio Code
-            </li>
-            <li>
-              <div>
-                <b>Command Line :</b>
-              </div>
-              Zsh Terminal
-            </li>
-          </ul>
+          <h2>Education</h2>
+          <p>
+            <b>Bachelors of Computer Science</b>
+            <br />
+            <div>2019 - 2022</div>University of Wollongong - SIM
+            <br />
+            <br />
+            <b>Certificate of Higher Education in Social Sciences</b>
+            <br />
+            <div>2018 - 2019</div>University of London - SIM
+            <br />
+            <br />
+            <b>International Baccalaureate</b>
+            <br />
+            <div>2016 - 2018</div>Bina Tunas Bangsa International School
+            <br />
+            <br />
+            <b>Cambridge IGCSE</b>
+            <br />
+            <div>2014 - 2016</div>Bina Tunas Bangsa International School
+          </p>
           <h2>Colophon</h2>
           <p>
-            Like any website, this website was written in HTML, CSS and
-            JavaScript. But also, it was written with the{" "}
-            <a href="https://nextjs.org/">Next.js</a> framework, which is a
+            The front-end uses <a href="https://nextjs.org/">Next.js</a>, a
             framework built on top of the{" "}
-            <a href="https://reactjs.org/">React</a> framework. Although its
-            normally used for dynamic, server-rendered React applications and
-            websites, it also supports static site generation, which is what I
-            used for this website. Initially I had difficulty choosing between{" "}
-            <a href="https://www.gatsbyjs.org/">Gatsby</a> and Next, but then I
-            finally decided on the latter because of its greater versatility
-            among other things.
-            <br />
+            <a href="https://reactjs.org/">React</a> framework.
             <br />
             This website is hosted on{" "}
             <a href="https://www.netlify.com/">Netlify</a>, and its codebase is
@@ -93,15 +86,37 @@ const About = () => {
           </p>
         </div>
         <div className={Styles.right}>
-          <h2>Languages I use</h2>
-          <div style={{ backgroundColor: "#ffff00" }}>JavaScript</div>
-          <div style={{ backgroundColor: "#ff4000", color: "white" }}>Java</div>
-          <div style={{ backgroundColor: "#bf00ff", color: "white" }}>
-            C Sharp
-          </div>
-          <div style={{ backgroundColor: "#0040ff", color: "white" }}>
-            Python
-          </div>
+          <h2>Other Stuff</h2>
+          <ul>
+            <li>
+              <h3>Email</h3>
+              <div>nicholashendrata110900@gmail.com</div>
+              <a href="mailto:nicholashendrata110900@gmail.com">
+                <button>Go</button>
+              </a>
+            </li>
+            <li>
+              <h3>GitHub</h3>
+              <div>NicholasSebastian</div>
+              <a href="https://github.com/NicholasSebastian">
+                <button>Go</button>
+              </a>
+            </li>
+            <li>
+              <h3>LinkedIn</h3>
+              <div>nichsebastian</div>
+              <a href="https://www.linkedin.com/in/nichsebastian">
+                <button>Go</button>
+              </a>
+            </li>
+            <li>
+              <h3>Instagram</h3>
+              <div>nicholashendrata</div>
+              <a href="https://www.instagram.com/nicholashendrata">
+                <button>Go</button>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </Template>

@@ -8,7 +8,7 @@ const Projects = ({ data }) => {
     <Template title="Nicholas Sebastian - Projects" description="Projects Page">
       <div className={Styles.heading}>Projects</div>
       <div className={Styles.container}>
-        <h1>Featured Projects</h1>
+        <h1>Personal Projects</h1>
         <div>coming soon...</div>
 
         <h1>Software Repository</h1>

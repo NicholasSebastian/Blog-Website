@@ -28,9 +28,3 @@
   background-color: #ff6e55;
   color: #fff;
 }
-
-.container > img {
-  width: inherit;
-  height: auto;
-  margin-bottom: 30px;
-}

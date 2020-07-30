@@ -28,9 +28,6 @@ const Post = ({ data, image, contents }) => {
             );
           })}
         </div>
-        {image && (
-          <img src={"/post_images/" + image} alt="image could not be loaded" />
-        )}
         <div
           className={MarkdownStyles.markdown_body}
           dangerouslySetInnerHTML={{ __html: contents }}
@@ -63,13 +60,11 @@ export const getStaticProps = async ({ params: { post } }) => {
   const filepath = path.join("posts", post + ".md");
   const rawMarkdown = fs.readFileSync(filepath).toString();
   const parsedMarkdown = matter(rawMarkdown);
-  const image = parsedMarkdown.data.image ? parsedMarkdown.data.image : null;
   const parsedContent = marked(parsedMarkdown.content);
 
   return {
     props: {
       data: parsedMarkdown.data,
-      image: image,
       contents: parsedContent,
     },
   };
