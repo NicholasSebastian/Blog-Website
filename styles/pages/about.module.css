@@ -49,11 +49,21 @@
   background-color: #ff6e55;
 }
 
+.left > ul {
+  line-height: 1.5;
+  padding-left: 18px;
+}
+
 .right {
   width: 240px;
 }
 
-.right h2 {
+.right > h1 {
+  font-size: 26px;
+}
+
+.right > h2 {
+  margin-top: 60px;
   margin-bottom: 28px;
   font-size: 26px;
 }
@@ -75,7 +85,7 @@
   font-size: 15px;
 }
 
-.right > ul > li > a > button {
+.right button {
   background-color: #55ffb8;
   margin-top: 8px;
   border: none;
@@ -84,7 +94,7 @@
   font-weight: 500;
 }
 
-.right > ul > li > a > button:hover {
+.right button:hover {
   cursor: pointer;
   background-color: #00df82;
 }

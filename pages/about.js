@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Template from "../components/template";
 import Styles from "../styles/pages/about.module.css";
@@ -30,39 +31,18 @@ const About = () => {
             3rd year of middle school, when I made small games with C# through{" "}
             <a href="https://unity.com/">Unity</a>. I then took private classes
             to learn Python through my high school years. I also had HTML and
-            CSS lessons throghout my school years if you count them in. These
-            past two years I learned JavaScript by myself and Java in my college
-            classes, and am now learning C++ by myself. I still learn more
-            things everyday and I aspire to one day have a career that will
-            allow me to channel my passion in programming and make the most out
-            of my abilities.
+            CSS lessons throghout my school years if you count them in. I
+            learned Java from my university classes and now in addition to the
+            past two years of learning JavaScript by myself, I am now also
+            learning C++. I still learn more things everyday and I aspire to one
+            day have a career that will allow me to channel my passion in
+            programming and make the most out of my abilities.
             <br />
             <br />
             The purpose of this website? I honestly have no idea. I originally
             made this on a whim, but this blog turned out to be quite of use to
             me. I occassionally feel like sharing the things that I've learned
             or experienced and this is probably where I'll turn to.
-          </p>
-          <h2>Education</h2>
-          <p>
-            <b>Bachelors of Computer Science</b>
-            <br />
-            <div>2019 - 2022</div>University of Wollongong - SIM
-            <br />
-            <br />
-            <b>Certificate of Higher Education in Social Sciences</b>
-            <br />
-            <div>2018 - 2019</div>University of London - SIM
-            <br />
-            <br />
-            <b>International Baccalaureate</b>
-            <br />
-            <div>2016 - 2018</div>Bina Tunas Bangsa International School
-            <br />
-            <br />
-            <b>Cambridge IGCSE</b>
-            <br />
-            <div>2014 - 2016</div>Bina Tunas Bangsa International School
           </p>
           <h2>Colophon</h2>
           <p>
@@ -84,8 +64,21 @@ const About = () => {
             This site was built with modern browsers in mind so it might not
             look well in older ones.
           </p>
+          <h2>To-Do List</h2>
+          <ul>
+            <li>Responsive CSS for smaller screen sizes.</li>
+            <li>Comments for Blog Posts.</li>
+            <li>
+              Add a backend to handle fetching data from GitHub instead of
+              directly from the client {"(?)"}
+            </li>
+          </ul>
         </div>
         <div className={Styles.right}>
+          <h1>CV / Resume</h1>
+          <Link href="/resume">
+            <button>View CV</button>
+          </Link>
           <h2>Other Stuff</h2>
           <ul>
             <li>
