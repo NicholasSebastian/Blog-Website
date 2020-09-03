@@ -2,8 +2,10 @@
   Nicholas Sebastian Hendrata
 </h1>
 
-This is the latest and greatest version of my personal website, made with Next.js for static site generation.  
+My old personal website, made with Next.js for static site generation.  
 I use this site for whatever really, like posting blogs and showcasing my projects maybe.
+
+## Preview
 
 ![Screenshot](screenshot.png)
 
